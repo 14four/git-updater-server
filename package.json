@@ -1,6 +1,6 @@
 {
   "name": "git-updater-server",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Starts a websocket server to allow clients to connect to it and update their git repository based on a webhook.",
   "scripts": {
     "start": "node ./bin/www"
