@@ -12,7 +12,7 @@ module.exports = function(io) {
         console.log("data:", data);
         if (latestHash[data.branch] && latestHash[data.branch] != data.hash)
         {
-          socket.emit("update", {message:"Not quite there yet.", hash:hash, branch:branch});
+          socket.emit("update", {message:"Not quite there yet.", hash:latestHash[data.branch], branch:data.branch});
         }
       })
     });
